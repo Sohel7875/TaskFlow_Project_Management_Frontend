@@ -1,0 +1,63 @@
+:root {
+    --left-side-menu-width: 350px;
+    --right-side-menu-width: 250px;
+    --content-padding: 2rem;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --border-color: #ddd;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --header-footer-height: 100px; /* Example header/footer height if needed */
+  }
+  
+  .AuthLayout {
+    display: grid;
+    grid-template-columns: var(--right-side-menu-width) 1fr var(--left-side-menu-width);
+    grid-template-areas: "left content right";
+    max-width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .leftSideMenu,
+  .RightSideMenu {
+    position: sticky;
+    top: 0; 
+    height: 100vh;
+    background-color: #ffffff;
+    padding: var(--content-padding);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .leftSideMenu {
+    grid-area: left;
+    border-right: 1px solid var(--border-color);
+  }
+  
+  .RightSideMenu {
+    grid-area: right;
+    border-left: 1px solid var(--border-color);
+  }
+  
+  .content {
+    grid-area: content;
+    padding: var(--content-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    overflow-y: auto; 
+    height:100vh;
+    margin: 0 auto;
+    width: 95%;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    scrollbar-width: none;
+  }
+  
