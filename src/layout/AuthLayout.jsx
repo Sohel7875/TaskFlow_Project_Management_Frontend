@@ -1,19 +1,17 @@
 import React from 'react';
 import styles from './AuthLayout.module.css';
+import Sidebar from '../components/sidebar/Sidebar';
+import { Outlet } from 'react-router-dom';
 
-const AuthLayout = ({ children }) => {
+const AuthLayout = () => {
   return (
     <main className={styles.AuthLayout}>
       <aside className={styles.leftSideMenu}>
         <nav>
-          <ul>
-            <li>Menu Item 1</li>
-            <li>Menu Item 2</li>
-            <li>Menu Item 3</li>
-          </ul>
+         <Sidebar />
         </nav>
       </aside>
-      <section className={styles.content}>{children}</section>
+      <section className={styles.content}>  <Outlet /></section>
       <aside className={styles.RightSideMenu}>
         <div>
           <p>Additional Information</p>

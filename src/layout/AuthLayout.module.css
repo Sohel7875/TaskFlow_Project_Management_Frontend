@@ -1,6 +1,6 @@
 :root {
     --left-side-menu-width: 350px;
-    --right-side-menu-width: 250px;
+    --right-side-menu-width: 270px;
     --content-padding: 2rem;
     --background-color: #f9f9f9;
     --text-color: #333;
@@ -24,20 +24,28 @@
   .RightSideMenu {
     position: sticky;
     top: 0; 
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffffff;
     padding: var(--content-padding);
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
+    scrollbar-width: none;
   }
   
   .leftSideMenu {
     grid-area: left;
+    padding: 1rem 0rem;
     border-right: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+  }
+  .leftSideMenu nav{
+    width: 85%;
+    height: 100%;
   }
   
   .RightSideMenu {
