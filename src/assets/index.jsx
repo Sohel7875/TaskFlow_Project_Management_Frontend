@@ -7,6 +7,12 @@ import AddIcon from './AddIcon.png'
 import ProjectIcon1 from './ProjectIcon1.png'
 import ProjectIcon2 from './ProjectIcon2.png'
 import ProjectIcon3 from './ProjectIcon3.png'
+import TodoListIcon from './TodoList.png'
+import EditButton from './EditButton.png'
+import Paper from './Paper.png'
+import OptionIcon from './Option.png'
 
 
-export {AppLogo,TaskLogo1,TaskLogo2,TaskLogo3,TaskLogo4,AddIcon,ProjectIcon1,ProjectIcon2,ProjectIcon3}
+
+
+export {AppLogo,TaskLogo1,TaskLogo2,TaskLogo3,TaskLogo4,AddIcon,ProjectIcon1,ProjectIcon2,ProjectIcon3,TodoListIcon,EditButton,Paper,OptionIcon}

@@ -1,0 +1,63 @@
+.todoCard {
+    width: 100%;
+    min-height: 5rem;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 0.4rem;
+    background-color: var(--todo_card-color);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoTask {
+    display: flex;
+    align-items: flex-start;
+   padding: 1rem 0rem;
+    gap: 0px;
+    width: 100%;
+}
+
+.todoTask p {
+    margin: 0;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.todoTask.todoChecked p {
+   color: var(--var_dark_blue);
+   text-decoration: line-through;
+}
+.todoTaskDetails {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0px 1rem;
+    justify-content: space-between; 
+    align-items: flex-start; 
+   gap: 10px;
+    width: 95%; 
+}
+
+.todoTaskTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+    width: 100%;
+}
+
+.todoTaskTags p {
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    word-break: keep-all;
+ 
+    margin: 0; 
+  
+}
+
+.todoTaskDate {
+    text-align: end; 
+    white-space: nowrap; 
+    margin-left: auto; 
+}

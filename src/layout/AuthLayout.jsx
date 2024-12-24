@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './AuthLayout.module.css';
 import Sidebar from '../components/sidebar/Sidebar';
 import { Outlet } from 'react-router-dom';
+import Sidemenu from '../components/sidemenu/Sidemenu';
 
 const AuthLayout = () => {
   return (
@@ -13,9 +14,7 @@ const AuthLayout = () => {
       </aside>
       <section className={styles.content}>  <Outlet /></section>
       <aside className={styles.RightSideMenu}>
-        <div>
-          <p>Additional Information</p>
-        </div>
+        <Sidemenu />
       </aside>
     </main>
   );

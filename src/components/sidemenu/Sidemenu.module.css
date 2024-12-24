@@ -1,0 +1,11 @@
+.mainContainer{
+    width: 95%;
+    height: 100vh;
+   
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0rem;
+    align-items: center;
+}
