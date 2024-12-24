@@ -82,8 +82,12 @@ const Notes = () => {
 
   const handleAddTag = () => {
     if (tag?.length === 0) return
+
+    const tagList = tag?.split(',')
+
+    
     setTags((prev) => {
-      return [tag, ...prev]
+      return [...tagList, ...prev]
     })
     setTag('')
   }
